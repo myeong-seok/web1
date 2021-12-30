@@ -1,0 +1,165 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: black;
+  --blue-color: blue;
+  --red-color: red;
+  --grey-dark-color: darkgrey;
+  --grey-light-colir: lightgrey;
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  margin-right: var(--padding);
+}
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  width: 70%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndbuttons {
+  display: flex;
+}
+
+.info .metadata .titleAndbuttons .title {
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndbuttons .moreBtn {
+  height: 100%;
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.actions button i {
+  margin-bottom: calc(var(--padding) / 2);
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.actions button .fa-thumbs-up {
+  color: var(--blue-color);
+}
+
+.channelInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.channelInfo .metadata {
+  display: flex;
+}
+
+.channelInfo .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelInfo .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.channelInfo .metadata .subscribers {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelInfo .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.Next .item {
+  width: 40%;
+  height: 40%;
+}
